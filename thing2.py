@@ -1,10 +1,10 @@
+import sys
+
 class PupThing():
 
     def __init__(self):
-        #Uncomment this (and comment the other one) to change the dictionary
-        #self.pupdict = {"toy":"squeaky","bark":"borf","tail":"unknown"}
         #Whatever goes up here is availbale to the entire class
-        self.pupdict = {"toy":"bone","bark":"borf","tail":"unknown"}
+        self.pupdict = {"toy":sys.argv[1],"bark":"borf","tail":"unknown"}
 
     def loop_me(self,somevalue):
         if self.pupdict["toy"] == somevalue:
